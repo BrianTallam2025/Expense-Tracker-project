@@ -1,12 +1,47 @@
-# React + Vite
+# 💸 ExpenseTracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Track smarter. Spend wiser.**
 
-Currently, two official plugins are available:
+ExpenseEase is a minimalistic, intuitive expense tracker built using React, Vite, and Tailwind CSS. It allows users to effortlessly record their expenses, categorize them, and view the records in a clean table format.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- Add new expenses with:
+  - Expense Name
+  - Category
+  - Description
+  - Amount
+  - Date
+- View expenses in a table
+- Fully responsive and styled with Tailwind CSS
+- State management with React hooks
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React** — frontend framework
+- **Vite** — blazing fast dev environment
+- **Tailwind CSS** — utility-first styling
+
+## 🔗 Live Demo
+
+[Click here to view the app](https://your-vercel-link.vercel.app)
+
+## 📌 Upcoming Improvements
+
+- Filter by category/date
+- Edit & delete expense entries
+- LocalStorage or backend support
+
+---
+
+### 👨‍💻 Author Info
+
+**Name:** Tallam  
+**Project:** ExpenseEase (React Vite Tailwind App) 
+**Instructor:** Kelvin 
+**Date:** April 2025
+
+---
+
+> “Know where your money goes. ExpenseTracker makes it easy.”
+
