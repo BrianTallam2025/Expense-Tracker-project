@@ -1,28 +1,8 @@
-import { useState } from "react";
-
-function Addexpense({ expenses }) {
-  const [searchTerm, setSearchTerm] = useState("");
-
-
-  const filteredExpenses = expenses.filter(
-    (expense) =>
-      expense.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      expense.category.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  return (
-    <div className="overflow-x-auto mt-10">
-      <h2 className="text-xl font-semibold mb-4">Expense Summary</h2>
-
-      <input
-        type="text"
-        placeholder="Search by name or category..."
-        className="w-full mb-4 p-2 border border-gray-300 rounded-md"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-
-      {filteredExpenses.length > 0 ? (
+function Addexpense ({ expenses }) {
+    
+    return (
+      <div className="overflow-x-auto mt-10">
+        <h2 className="text-xl font-semibold mb-4">Expense Summary</h2>
         <table className="min-w-full bg-white border border-gray-200 shadow-sm rounded-lg">
           <thead className="bg-gray-100">
             <tr>
@@ -34,7 +14,7 @@ function Addexpense({ expenses }) {
             </tr>
           </thead>
           <tbody>
-            {filteredExpenses.map((expense, index) => (
+            {expenses.map((expense, index) => (
               <tr key={index} className="border-t">
                 <td className="px-6 py-4">{expense.name}</td>
                 <td className="px-6 py-4">{expense.category}</td>
@@ -45,11 +25,8 @@ function Addexpense({ expenses }) {
             ))}
           </tbody>
         </table>
-      ) : (
-        <p className="text-gray-500 mt-4">No matching expenses found.</p>
-      )}
-    </div>
-  );
-}
-
-export default Addexpense;
+      </div>
+    );
+  }
+  
+  export default Addexpense;
